@@ -1,0 +1,108 @@
+.friend-list-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:20%;
+}
+.friend-icon-container {
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    width: fit-content;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+.friend-dialog-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.friend-dialog-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: #7f7e7e;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.friend-dialog-header {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+}
+.friend-dialog-info {
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    font-size: 1.5rem;
+    height: 100%;
+    gap: 50%;
+    font-family: 'cursive';
+    font-weight: bold;
+}
+.friend-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+}
+
+.friend-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.friend-icon img:hover {
+    background-color: #656565;
+}
+
+
+.status-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.status-circle.online {
+    background-color: green;
+}
+
+.status-circle.offline {
+    background-color: red;
+}
+
+.status-circle.appearing-offline {
+    background-color: red;
+    position: relative;
+}
+
+.status-circle.appearing-offline::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: translate(-50%, -50%) rotate(45deg);
+}

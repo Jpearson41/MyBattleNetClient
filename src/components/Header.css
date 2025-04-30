@@ -1,0 +1,86 @@
+.header-container {
+    display: flex;
+    flex-direction: row; 
+    height: 20vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #282c34, #3a3f47);
+    border-bottom: 2px solid #e0e0e0;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.header-items-container {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.header-items {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative
+}
+
+.header-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.header-text {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    align-self: center;
+    position: absolute;
+    left: 50%;
+}
+
+
+.button-row {
+    display: flex;
+    width: fit-content;
+    height: 25%;
+    padding: 10px;
+}
+
+.button-row-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.button-row-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white
+}
+
+.button-row-text:hover {
+    cursor: pointer;
+}
+
+.button-row-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    margin-right: 15px;
+}
+
+.button-row-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the entire div */
+}
